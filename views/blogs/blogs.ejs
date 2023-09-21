@@ -64,13 +64,17 @@
                 <% blogs.forEach(function(blog) { %>
                     <div class="col-12 col-md-6 col-lg-4 mb-3">
                         <div class="card d-flex flex-column justify-content-between h-100">
-                            <div class="card-header">
-                                <img src="/images/<%= blog.image%>" class="card-img-top" alt="<%= blog.title%>">
+                            <div style="height:280px;">
+                                <img src="/images/<%= blog.image%>" class="card-img-top h-100" alt="<%= blog.title%>"
+                                    style="object-fit: cover;">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    <%= blog.title%>
-                                </h5>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <h5 class="card-title m-0">
+                                        <%= blog.title%>
+                                    </h5>
+                                    <em class="text-muted">by <%= createdBy(blog.userId) %></em>
+                                </div>
                                 <span class="text-muted">
                                     <%= blog.createdAt%>
                                 </span>
