@@ -1,0 +1,129 @@
+{
+  "users": [
+    {
+      "id": "1694594996679",
+      "name": "john",
+      "email": "john@gmail.com",
+      "password": "john3001"
+    },
+    {
+      "id": "1694636134294",
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "$2b$10$X2sTuqebIJPvWGztT.qbb.kF/cBzdhP4h2n8sEPDh/V2mg6jjyC1S"
+    },
+    {
+      "id": "1694637733057",
+      "name": "ismail",
+      "email": "ismail@hotmail.com",
+      "password": "$2b$10$goAh9.a2ldOcMfQN33WmvOMDVLUXkZMLtCo2oMyOnXqFXWR33Y3IW"
+    },
+    {
+      "id": "1694694625845",
+      "name": "mohammed",
+      "email": "moha@gmail.com",
+      "password": "$2b$10$ji0QIgwywYao2Vhv/V7.BOPWu6QFsf7bc3jwgtsxY0cDbRwH5wbhG"
+    },
+    {
+      "id": "1694696254916",
+      "name": "mustapha",
+      "email": "musta@gmail.com",
+      "password": "$2b$10$vyyMBoZzXJGjJReBMB6uJe4iI86VYE7OQVUkEikjO8I1Ch17St36K"
+    },
+    {
+      "id": "1694704433339",
+      "name": "soukaina",
+      "email": "souk@gmail.com",
+      "password": "$2b$10$P9.VUWMIv4Blu.qCEZ56/.kT626Uo1t4nXilo3RqLaii5ByfpRqze"
+    },
+    {
+      "id": "1694992654162",
+      "name": "Soulaimane",
+      "email": "soul@gmail.com",
+      "password": "$2b$10$9pSLwgNF8ntx0LAM7MxBm.HydHlBer4LLpLBfG4xxqbGLcQwEyLIW"
+    },
+    {
+      "id": "1695296174272",
+      "name": "aiman",
+      "email": "aiman@gmail.com",
+      "password": "$2b$10$zHA1GSUhnFqqHVgBCzX2KO8Re9XjNIDSlOP4tqqI.k/UxcUu0RZUW"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1694959655285",
+      "title": "What is Fishing ?",
+      "createdAt": "September 17, 2023",
+      "description": "Fishing is life for some people",
+      "markdown": "yes i agree",
+      "userId": "1694696254916"
+    },
+    {
+      "id": "1694990564087",
+      "title": "Mareked blog",
+      "createdAt": "September 17, 2023",
+      "description": "description for marked thing  ",
+      "markdown": "# This is a big title\r\nsmall one  ",
+      "userId": "1694704433339"
+    },
+    {
+      "id": "1694992090628",
+      "title": "Structured Blog",
+      "createdAt": "September 18, 2023",
+      "description": " A good structered blog article with marked commands!    ",
+      "markdown": "   # The Beauty of Nature\r\n\r\n![Scenic Landscape](https://th.bing.com/th/id/OIP.WwXfaQZ-Jc8T4lzcZ4R3mQHaE7?pid=ImgDet&rs=1)\r\n\r\nNature has always captivated the human soul with its sheer magnificence. From the rugged mountains that touch the sky to the tranquil lakes nestled in the valleys, the world around us is a masterpiece waiting to be explored.\r\n\r\n## Exploring the Wilderness\r\n\r\n> \"In every walk with nature, one receives far more than he seeks.\"  \r\n> — John Muir\r\n\r\nWhen you step into the wilderness, you embark on a journey of self-discovery. The rustling leaves, the chirping birds, and the gushing streams compose a symphony that resonates with your innermost being. As you hike along the trails, you'll encounter nature's wonders at every turn.\r\n\r\n### The Serenity of Forests\r\n\r\nForests, with their towering trees and dappled sunlight, offer a sanctuary of serenity. The aroma of pine needles and the gentle whisper of leaves in the breeze create an enchanting atmosphere. It's a place where you can disconnect from the hustle and bustle of daily life and reconnect with your inner peace.\r\n\r\n![Enchanted Forest](https://th.bing.com/th/id/OIP.i1Mj-ibsxyz_hbKsjXSowQHaEo?pid=ImgDet&rs=1)\r\n\r\n## A World Beneath the Waves\r\n\r\nDon't forget the enchanting world beneath the ocean's surface. Snorkeling or scuba diving can transport you to a realm of vibrant coral reefs, graceful sea turtles, and mysterious shipwrecks. The ocean is a testament to the boundless beauty of our planet.\r\n\r\n### Preserving Our Natural Heritage\r\n\r\nAs adventurers and lovers of the outdoors, it's our responsibility to protect and preserve these natural treasures. Let's ensure that future generations can experience the same awe and wonder that we do today.\r\n\r\nIn conclusion, nature invites us to embark on a never-ending voyage of discovery. It reminds us of the beauty and fragility of our planet. So, lace up your hiking boots, grab your camera, and let's continue exploring this remarkable world together!\r\n ",
+      "userId": "1694704433339"
+    },
+    {
+      "id": "1694993016066",
+      "title": "Photography",
+      "createdAt": "September 18, 2023",
+      "description": "This blog is about the art of photography!  ",
+      "markdown": "# The Art of Photography\r\n\r\n![Camera in Hand](https://th.bing.com/th/id/OIP.F9RGD2d59pDFzoT-uWcQ6QHaE7?pid=ImgDet&rs=1)\r\n\r\nPhotography is more than just capturing moments; it's an art form that allows us to express our creativity and perspective. In today's digital age, anyone can become a photographer, armed with a smartphone or a professional camera. \r\n\r\n## Finding Beauty in the Mundane\r\n\r\n> \"Photography is the story I fail to put into words.\"  \r\n> — Destin Sparks\r\n\r\nOne of the most incredible aspects of photography is its ability to turn the ordinary into the extraordinary. Here are a few ways photographers achieve this:\r\n\r\n- **Macro Photography**: By getting up close and personal with tiny subjects, like dew-covered spider's webs or delicate flowers, photographers reveal the intricate details often overlooked.\r\n\r\n- **Street Photography**: Candid shots of bustling city streets can capture the essence of urban life, showing its vibrant energy and unique characters.\r\n\r\n### The Play of Light and Shadow\r\n\r\nThe interplay of light and shadow is at the heart of photography. It's in the way the morning sun casts long, dramatic shadows or how the golden hour bathes the world in a warm, soft glow. Capturing these moments of light and shadow can evoke powerful emotions in viewers. Here are some techniques to master:\r\n\r\n1. **Silhouettes**: By positioning your subject in front of a bright light source and underexposing the shot, you can create striking silhouettes.\r\n\r\n2. **HDR Photography**: High Dynamic Range (HDR) photography involves capturing multiple exposures of the same scene and blending them to capture both extreme highlights and shadows.\r\n\r\n![Golden Hour](https://th.bing.com/th/id/R.64cda5bfa7ccced5332b0ef0123debcf?rik=nbqqzncB%2fWIA9A&pid=ImgRaw&r=0)\r\n\r\n## Telling Stories Through Images\r\n\r\nPhotographs have the power to tell stories without words. A portrait can convey the depth of a person's character, a landscape can transport you to another place and time, and a series of images can document the passage of life itself. Here's how photographers accomplish this:\r\n\r\n- **Photo Essays**: A series of images, accompanied by captions or short narratives, can take viewers on a visual journey through a specific topic or theme.\r\n\r\n- **Documentary Photography**: Capturing real-life events, people, and places as they unfold can create powerful narratives that inform and inspire.\r\n\r\n### Capturing the Essence\r\n\r\nAs photographers, our mission is to capture the essence of the subject. Whether it's the joy in a child's eyes, the ruggedness of a mountain range, or the intricacies of a delicate flower, our lenses are the storytellers of the world.\r\n\r\nIn conclusion, photography is a visual language that transcends borders and cultures. It allows us to share our unique perspectives and connect with others on a profound level. So, grab your camera, explore your surroundings, and let your creativity flow through the art of photography.\r\n  ",
+      "userId": "1694992654162"
+    },
+    {
+      "id": "1695203921705",
+      "title": "Test data",
+      "createdAt": "September 20, 2023",
+      "description": " test watch command on json file edited",
+      "markdown": "  # header\r\n## small header       ",
+      "userId": "1694992654162"
+    },
+    {
+      "id": "1695246887262",
+      "title": "Moment.js",
+      "createdAt": "September 20, 2023",
+      "description": "Update date format with moment js  ",
+      "markdown": "# Moment.js\r\n## Use moment js to update the date format",
+      "userId": "1694992654162"
+    },
+    {
+      "id": "1695310091269",
+      "title": "pizza",
+      "createdAt": "September 21, 2023",
+      "description": "tessst",
+      "markdown": "# header",
+      "image": "1695310091243-pizza table.jpg",
+      "userId": "1695296174272"
+    },
+    {
+      "id": "1695310163378",
+      "title": "rick",
+      "createdAt": "September 21, 2023",
+      "description": "descript klfjlsfk,jef",
+      "markdown": "# big header  \r\n## small header",
+      "image": "1695310163375-rick.jpg",
+      "userId": "1695296174272"
+    },
+    {
+      "id": "1695310389386",
+      "title": "What is Fishing ?",
+      "createdAt": "September 21, 2023",
+      "description": "image descriptiotn",
+      "markdown": "# image header\r\n## small title",
+      "image": "1695310389383-48-536x354.jpg",
+      "userId": "1695296174272"
+    }
+  ]
+}
