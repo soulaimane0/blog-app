@@ -15,11 +15,9 @@ const imagesFilePath = path.join(__dirname, '../public/images');
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    console.log('destination: ', file);
     cb(null, imagesFilePath);
   },
   filename: (req, file, cb) => {
-    console.log('file name: ', file);
     cb(null, Date.now() + '-' + file.originalname);
   },
 });
@@ -52,7 +50,6 @@ export const createBlog = (req, res) => {
 
     fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2));
 
-    console.log('file: ', req.file.filename);
     logger.info('New Blog Article Created Successfully!');
 
     res.redirect(`/blogs/${blog.id}`);
@@ -74,9 +71,15 @@ export const showBlogs = (req, res) => {
   const blogs = getAllJsonData().blogs;
   const sortedBlogs = _.orderBy(blogs, ['createdAt'], ['desc']);
 
+  const createdBy = (userId) => {
+    const user = getAllJsonData().users.find((u) => u.id === userId);
+    return user.name;
+  };
+
   res.render('blogs/blogs', {
     name,
     blogs: sortedBlogs,
+    createdBy,
     authenticatedUserId: req.user.id,
   });
 };
@@ -111,12 +114,16 @@ export const updateBlog = (req, res) => {
 
   if (!blog) return res.redirect('/blogs');
 
+  if (req.file) {
+    blog.image = req.file.filename;
+  }
+
   blog.title = title;
-  blog.description = description;
-  blog.markdown = markdown;
-  blog.image = req.file.filename;
+  blog.description = description.trim();
+  blog.markdown = markdown.trim();
 
   fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2));
+
   logger.info('Blog Article Updated Successfully!');
 
   res.redirect(`/blogs/${blog.id}`);
