@@ -1,0 +1,23 @@
+<div class="mb-3">
+    <label for="formFile" class="form-label">Upload blog image</label>
+    <input class="form-control" type="file" id="formFile" name="image">
+</div>
+<div class="mb-3">
+    <label for="titleInpt" class="form-label">Title</label>
+    <input type="text" name="title" class="form-control" placeholder="title" id="titleInpt" value="<%= blog.title %>"
+        required>
+</div>
+<div class="mb-3">
+    <label for="descInpt" class="form-label">Description</label>
+    <textarea placeholder="description..." name="description" class="form-control" id="descInpt" cols="30" rows="2"
+        required> <%= blog.description %> </textarea>
+</div>
+<div class="mb-3">
+    <label for="markInpt" class="form-label">Markdown</label>
+    <textarea placeholder="markdown..." name="markdown" class="form-control" id="markInpt" cols="30" rows="4"
+        required> <%= blog.markdown %> </textarea>
+</div>
+<div class="d-grid gap-2 d-md-block text-md-end">
+    <a href="/blogs" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary">Save</button>
+</div>
