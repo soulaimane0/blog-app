@@ -6,6 +6,8 @@ import passport from 'passport';
 import session from 'express-session';
 import flash from 'express-flash';
 import methodOverride from 'method-override';
+import middleware from 'i18next-http-middleware';
+import i18next from './config/i18nConfig.js';
 
 dotenv.config();
 const app = express();
@@ -27,6 +29,7 @@ app.use(passport.session());
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
+app.use(middleware.handle(i18next));
 
 initializePassport(passport);
 
@@ -34,6 +37,7 @@ app.get('/', (req, res) => {
   res.render('home', {
     isAuthenticated: req.isAuthenticated(),
     name: req.user?.name,
+    t: req.t,
   });
 });
 
