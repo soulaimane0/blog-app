@@ -1,6 +1,6 @@
 # Blog App
 
-![App Screenshot](/images/app-screenshot.png)
+![App Screenshot](/public/images/app-screenshot.png)
 
 Welcome to the Blog App repository! This application is a simple blog platform built using Node.js and Express.js. It utilizes a JSON file as a database for storing blog posts. The project incorporates several libraries and tools to enhance its functionality, including multer, passport.js, ejs, bcrypt, i18next, marked (for rendering Markdown blog content), winston for logging, and moment for managing dates.
 
