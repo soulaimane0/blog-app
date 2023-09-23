@@ -11,7 +11,6 @@ Welcome to the Blog App repository! This application is a simple blog platform b
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
