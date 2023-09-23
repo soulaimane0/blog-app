@@ -34,7 +34,7 @@ const addNewUser = (user) => {
 };
 
 export const renderRegisterPage = (req, res) => {
-  res.render('auth/register', { showError: false });
+  res.render('auth/register', { showError: false, t: req.t });
 };
 
 export const registerNewUser = async (req, res) => {
@@ -43,6 +43,7 @@ export const registerNewUser = async (req, res) => {
     return res.render('auth/register', {
       showError: true,
       errorMessage: 'The password must be at least 8 characters long!',
+      t: req.t,
     });
   }
 
@@ -64,7 +65,7 @@ export const registerNewUser = async (req, res) => {
 };
 
 export const renderLoginPage = (req, res) => {
-  res.render('auth/login');
+  res.render('auth/login', { t: req.t });
 };
 
 export const loginUser = passport.authenticate('local', {

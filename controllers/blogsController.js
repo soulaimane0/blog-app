@@ -56,14 +56,14 @@ export const createBlog = (req, res) => {
   } catch (err) {
     logger.error(err);
     const { name } = req.user;
-    res.render('blogs/newBlog', { name, blog });
+    res.render('blogs/newBlog', { name, blog, t: req.t });
   }
 };
 
 export const showNewBlog = (req, res) => {
   const { name } = req.user;
 
-  res.render('blogs/newBlog', { name, blog: {} });
+  res.render('blogs/newBlog', { name, blog: {}, t: req.t });
 };
 
 export const showBlogs = (req, res) => {
@@ -81,6 +81,7 @@ export const showBlogs = (req, res) => {
     blogs: sortedBlogs,
     createdBy,
     authenticatedUserId: req.user.id,
+    t: req.t,
   });
 };
 
@@ -103,7 +104,7 @@ export const showUpdateBlog = (req, res) => {
 
   if (!blog) return res.redirect('/blogs');
 
-  res.render('blogs/editBlog', { name, blog });
+  res.render('blogs/editBlog', { name, blog, t: req.t });
 };
 
 export const updateBlog = (req, res) => {
@@ -136,5 +137,10 @@ export const showBlog = (req, res) => {
 
   if (!blog) return res.redirect('/blogs');
   blog.markdown = marked.parse(blog.markdown);
-  res.render('blogs/blog', { name, blog, authenticatedUserId: req.user.id });
+  res.render('blogs/blog', {
+    name,
+    blog,
+    authenticatedUserId: req.user.id,
+    t: req.t,
+  });
 };
