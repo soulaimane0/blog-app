@@ -19,6 +19,8 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"
         defer>
         </script>
+    <!-- change language logic -->
+    <script src="/script/script.js" defer></script>
 </head>
 
 <body class="vh-100 overflow-hidden">
@@ -42,7 +44,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Welcome, <%= name %>
+                                <%= t('welcome_msg') %>, <%= name %>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/auth/logout">Logout</a></li>
@@ -51,8 +53,12 @@
                     </ul>
                     <% }else{%>
                         <div>
-                            <a class="btn btn-light me-2" href="/auth/login">Login</a>
-                            <a class="btn btn-outline-light" href="/auth/register">Register</a>
+                            <a class="btn btn-light me-2" href="/auth/login">
+                                <%=t('login_txt')%>
+                            </a>
+                            <a class="btn btn-outline-light" href="/auth/register">
+                                <%=t('register_txt')%>
+                            </a>
                         </div>
                         <% }%>
 
@@ -60,14 +66,20 @@
         </div>
     </nav>
     <div class="container">
+        <div class="d-flex justify-content-end">
+            <%- include('_language_form') %>
+        </div>
         <div class="row mt-5 d-md-flex align-items-center">
             <div class="col-12 col-md-7">
-                <h1>Explore a World of Knowledge</h1>
-                <p>Welcome to our blog, where curiosity meets insight. Discover a wide range of engaging articles,
-                    insightful stories, and thought-provoking ideas. Whether you're a seasoned reader or just getting
-                    started, there's something here for everyone. Dive into the fascinating world of knowledge and
-                    inspiration.</p>
-                <a class="btn btn-primary" href="/blogs">Read some blogs &rarr;</a>
+                <h1>
+                    <%= t('header_title') %>
+                </h1>
+                <p>
+                    <%= t('header_paragraph') %>
+                </p>
+                <a class="btn btn-primary" href="/blogs">
+                    <%= t('read_blogs') %> &rarr;
+                </a>
             </div>
             <div class="col-12 col-md-5">
                 <img class="img-fluid"

@@ -19,6 +19,8 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"
         defer>
         </script>
+    <!-- change language logic -->
+    <script src="/script/script.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Welcome, <%= name %>
+                            <%= t('welcome_msg') %>, <%= name %>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/auth/logout">Logout</a></li>
@@ -53,7 +55,12 @@
     </nav>
 
     <div class="container mt-4">
-        <h2>New Blog!</h2>
+        <div class="d-flex justify-content-end">
+            <%- include('../_language_form.ejs') %>
+        </div>
+        <h2>
+            <%= t('new_blog_lbl')%>
+        </h2>
         <div class="row mt-3">
             <div class="col-12 col-md-6">
                 <form action="/blogs/new" method="post" enctype="multipart/form-data">

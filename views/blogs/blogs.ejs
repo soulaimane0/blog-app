@@ -19,6 +19,8 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"
         defer>
         </script>
+    <!-- change language logic -->
+    <script src="/script/script.js" defer></script>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Welcome, <%= name %>
+                            <%= t('welcome_msg') %>, <%= name %>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/auth/logout">Logout</a></li>
@@ -53,10 +55,17 @@
     </nav>
 
     <div class="container mt-4">
-        <h2>Read and become an author by creating Articles!</h2>
+        <div class="d-flex justify-content-end">
+            <%- include('../_language_form.ejs') %>
+        </div>
+        <h2>
+            <%= t('blogs_header') %>
+        </h2>
 
         <div class="d-flex justify-content-end">
-            <a href="/blogs/new" class="btn btn-success">New Article</a>
+            <a href="/blogs/new" class="btn btn-success">
+                <%= t('new_blog_lbl') %>
+            </a>
         </div>
 
         <div class="row mt-4 d-flex align-items-stretch">
@@ -86,13 +95,19 @@
                             <div class="card-footer">
                                 <div class="btns d-flex justify-content-between">
                                     <div class="read-more">
-                                        <a href="/blogs/<%=blog.id%>" class="btn btn-primary">Read more</a>
+                                        <a href="/blogs/<%=blog.id%>" class="btn btn-primary">
+                                            <%= t('read_more_lbl')%>
+                                        </a>
                                     </div>
                                     <% if(authenticatedUserId===blog.userId){ %>
                                         <div class="action-btn d-flex">
-                                            <a href="/blogs/edit/<%=blog.id%>" class="btn btn-warning me-1">Edit</a>
+                                            <a href="/blogs/edit/<%=blog.id%>" class="btn btn-warning me-1">
+                                                <%= t('edit_btn') %>
+                                            </a>
                                             <form action="/blogs/delete/<%=blog.id%>?_method=DELETE" method="post">
-                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                                <button type="submit" class="btn btn-danger">
+                                                    <%= t('del_btn') %>
+                                                </button>
                                             </form>
                                         </div>
                                         <% } %>
@@ -102,7 +117,9 @@
                     </div>
                     <% }) %>
                         <% } else{ %>
-                            <h4>No blogs yet...</h4>
+                            <h4>
+                                <%= t('no_blogs') %>
+                            </h4>
                             <% } %>
         </div>
 

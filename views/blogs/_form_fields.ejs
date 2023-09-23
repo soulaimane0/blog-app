@@ -1,23 +1,35 @@
 <div class="mb-3">
-    <label for="formFile" class="form-label">Upload blog image</label>
+    <label for="formFile" class="form-label">
+        <%=t('upload_img')%>
+    </label>
     <input class="form-control" type="file" id="formFile" name="image" value="<%= blog.image %>">
 </div>
 <div class="mb-3">
-    <label for="titleInpt" class="form-label">Title</label>
+    <label for="titleInpt" class="form-label">
+        <%=t('title_label')%>
+    </label>
     <input type="text" name="title" class="form-control" placeholder="title" id="titleInpt" value="<%= blog.title %>"
         required>
 </div>
 <div class="mb-3">
-    <label for="descInpt" class="form-label">Description</label>
+    <label for="descInpt" class="form-label">
+        <%=t('desc_label')%>
+    </label>
     <textarea placeholder="description..." name="description" class="form-control" id="descInpt" cols="30" rows="2"
         required> <%= blog.description %> </textarea>
 </div>
 <div class="mb-3">
-    <label for="markInpt" class="form-label">Markdown</label>
+    <label for="markInpt" class="form-label">
+        <%=t('markdown_label')%>
+    </label>
     <textarea placeholder="markdown..." name="markdown" class="form-control" id="markInpt" cols="30" rows="4"
         required> <%= blog.markdown %> </textarea>
 </div>
 <div class="d-grid gap-2 d-md-block text-md-end">
-    <a href="/blogs" class="btn btn-secondary">Cancel</a>
-    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="/blogs" class="btn btn-secondary">
+        <%=t('cancel_btn')%>
+    </a>
+    <button type="submit" class="btn btn-primary">
+        <%=t('save_btn')%>
+    </button>
 </div>
