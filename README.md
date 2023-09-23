@@ -22,7 +22,7 @@ Before you dive into the code, make sure you have the following prerequisites in
 Once you have Node.js installed, clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/blog-app.git
+git clone https://github.com/soulaimane0/blog-app.git
 ```
 
 ## Features
@@ -41,7 +41,7 @@ git clone https://github.com/your-username/blog-app.git
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/my-blog-app.git
+   git clone https://github.com/soulaimane0/blog-app.git
    ```
 
 2. Navigate to the project directory:
